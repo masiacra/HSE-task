@@ -5,10 +5,14 @@
         <meta name="description" content="This is landing page">
         <meta name="keywords" content="graphs, calendars, table with employees">
         <title>Отсчеты</title>
-        <link rel="stylesheet" href="../style/reset.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style> 
+        <link rel="stylesheet" href="./style/reset.css">
+        <link rel="stylesheet" href="./style/index.css">
     </head>
     <body>
-        <div>
+        <div class="container">
             <header>
                 <label>Отчет за период</label>
                 <input type="date" value="02.09.2019">
@@ -197,14 +201,14 @@
                 </table>
             </main>
         </div>
-        <nav>
+        <nav class="nav-bar">
             <ul>
-                <li><a href="#">Карта</a></li>
-                <li><a href="#">Отсчеты</a></li>
-                <li><a href="#">Справочники</a></li>
-                <li><a href="#">Настройки</a></li>
+                <li><a class="nav-bar__element nav-bar__anchor" href="#">Карта</a></li>
+                <li class="nav-bar__active"><a class="nav-bar__element nav-bar__anchor" href="#">Отсчеты</a></li>
+                <li><a class="nav-bar__element nav-bar__anchor" href="#">Справочники</a></li>
+                <li><a class="nav-bar__element nav-bar__anchor" href="#">Настройки</a></li>
             </ul>
-            <button type="button">Выйти</button>
+            <button type="button" class="nav-bar__button nav-bar__element">Выйти</button>
         </nav>
 
     </body>
