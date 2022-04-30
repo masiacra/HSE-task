@@ -9,8 +9,10 @@ body {
 
 .container {
     height: 100%;
+    width: 100%;
 }
 
+/* styles for navigation bar*/
 .nav-bar {
     background-color: #000000;
     padding: 88px 0 42px 40px;
@@ -55,3 +57,71 @@ body {
 .nav-bar__active {
     border-right: 4px solid rgba(255, 255, 255, 0.4);
 }
+
+/* styles for header */
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.1), 0px 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px 40px 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__action {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 10px 31px 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 3px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin-left: 10px;
+}
+
+.header__interval {
+    display: flex;
+    align-items: center;
+}
+
+.header__label {
+    font-size: 16px;
+}
+
+.header__date {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 0.9;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 3px 8px rgba(0, 0, 0, 0.08);
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 140px;
+}
+
+.header__date-left {
+    border-radius: 40px 0 0 40px;
+    padding-left: 25px;
+    padding-right: 44px;
+    margin-left: 6px;
+}
+
+.header__date-right {
+    border-radius: 0 40px 40px 0;
+    padding-right: 49px;
+    padding-left: 20px;
+}
+
+.header__date-wrapper {
+    position: relative;
+}
+
+.header__date-icon {
+    position: absolute;
+    top: 25%;
+    right: 22px;
+}
+

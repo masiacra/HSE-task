@@ -13,17 +13,26 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <label>Отчет за период</label>
-                <input type="date" value="02.09.2019">
-                <input type="date" value="02.10.2019">
-
-                <button type="button">
-                    Настроить
-                </button>
-                <button type="button">
-                    Скачать CSV
-                </button>
+            <header class="header">
+                <div class="header__interval">
+                    <label class="header__label">Отчет за период</label>
+                    <div class="header__date-wrapper">
+                        <input type="text" class="header__date header__date-left" value="02.09.2019">
+                        <img class="header__date-icon" src="./images/calendar.svg" alt="calendar icon">
+                    </div>
+                    <div class="header__date-wrapper">
+                        <input type="text" class="header__date header__date-right" value="02.10.2019">
+                        <img class="header__date-icon" src="./images/calendar.svg" alt="calendar icon">
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="header__action">
+                        Настроить
+                    </button>
+                    <button type="button" class="header__action">
+                        Скачать CSV
+                    </button>
+                </div>
             </header>
             <main>
                 <div>
