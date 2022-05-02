@@ -155,148 +155,163 @@
                         Найти
                     </button>
                 </form>
-                <table>
-                    <th>
-                        <td>
-                            Критичность
-                        </td>
-                        <td>
-                            название
-                        </td>
-                        <td>
-                            Сотрудник
-                        </td>
-                        <td>
-                            Место
-                        </td>
-                        <td>
-                            Смена, обход
-                        </td>
-                        <td>
-                            Дата, время
-                        </td>
-                    </th>
-                    <tr>
-                        <td>
-                            Опасный
-                        </td>
-                        <td>
-                            Потеря связи
-                        </td>
-                        <td>
-                            Константинов В.Ю.
-                        </td>
-                        <td>
-                            Здание 1
-                        </td>
-                        <td>
-                            Смена 1, обход 5
-                        </td>
-                        <td>
-                            21.08.2018, 17:30
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Некритичный
-                        </td>
-                        <td>
-                            Разрядка аккумулятора
-                        </td>
-                        <td>
-                            Прохоров И.Н.
-                        </td>
-                        <td>
-                            Здание 2
-                        </td>
-                        <td>
-                            Смена 1, обход 5
-                        </td>
-                        <td>
-                            21.08.2018, 17:05
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Потенциально опасный
-                        </td>
-                        <td>
-                            Потеря связи
-                        </td>
-                        <td>
-                            Константинов В.Ю.
-                        </td>
-                        <td>
-                            Здание 1
-                        </td>
-                        <td>
-                            Смена 1, обход 5
-                        </td>
-                        <td>
-                            20.08.2018, 12:25
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Некритичный
-                        </td>
-                        <td>
-                            Разрядка аккумулятора
-                        </td>
-                        <td>
-                            Прохоров И.Н.
-                        </td>
-                        <td>
-                            Здание 2
-                        </td>
-                        <td>
-                            Смена 1, обход 5
-                        </td>
-                        <td>
-                            19.08.2018, 11:37
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Опасный
-                        </td>
-                        <td>
-                            Потеря связи
-                        </td>
-                        <td>
-                            Климов К.И.
-                        </td>
-                        <td>
-                            Здание 1
-                        </td>
-                        <td>
-                            Смена 1, обход 5
-                        </td>
-                        <td>
-                            18.08.2018, 10:51
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Потенциально опасный
-                        </td>
-                        <td>
-                            Потеря связи
-                        </td>
-                        <td>
-                            Константинов В.Ю.
-                        </td>
-                        <td>
-                            Здание 1
-                        </td>
-                        <td>
-                            Смена 1, обход 5
-                        </td>
-                        <td>
-                            20.08.2018, 12:25
-                        </td>
-                    </tr>
-                </table>
+                <!-- for real case should add scroller to table -->
+                <div class="results-table__container">
+                    <table class="results-table">
+                        <tr>
+                            <th>
+                                Критичность
+                            </th>
+                            <th>
+                                Название
+                            </th>
+                            <th>
+                                Сотрудник
+                            </th>
+                            <th>
+                                Место
+                            </th>
+                            <th>
+                                Смена, обход
+                            </th>
+                            <th>
+                                Дата, время
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="results-table__criticality results-table__criticality-bad">
+                                    Опасный
+                                </div>
+                            </td>
+                            <td>
+                                Потеря связи
+                            </td>
+                            <td>
+                                Константинов В.Ю.
+                            </td>
+                            <td>
+                                Здание 1
+                            </td>
+                            <td>
+                                Смена 1, обход 5
+                            </td>
+                            <td class="results-table__date">
+                                21.08.2018, 17:30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="results-table__criticality results-table__criticality-non-critical">
+                                    Некритичный
+                                </div>
+                            </td>
+                            <td>
+                                Разрядка аккумулятора
+                            </td>
+                            <td>
+                                Прохоров И.Н.
+                            </td>
+                            <td>
+                                Здание 2
+                            </td>
+                            <td>
+                                Смена 1, обход 5
+                            </td>
+                            <td class="results-table__date">
+                                21.08.2018, 17:05
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="results-table__criticality results-table__criticality-medium">
+                                    Потенциально опасный
+                                </div>
+                            </td>
+                            <td>
+                                Потеря связи
+                            </td>
+                            <td>
+                                Константинов В.Ю.
+                            </td>
+                            <td>
+                                Здание 1
+                            </td>
+                            <td>
+                                Смена 1, обход 5
+                            </td>
+                            <td class="results-table__date">
+                                20.08.2018, 12:25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="results-table__criticality results-table__criticality-non-critical">
+                                    Некритичный
+                                </div>
+                            </td>
+                            <td>
+                                Разрядка аккумулятора
+                            </td>
+                            <td>
+                                Прохоров И.Н.
+                            </td>
+                            <td>
+                                Здание 2
+                            </td>
+                            <td>
+                                Смена 1, обход 5
+                            </td>
+                            <td class="results-table__date">
+                                19.08.2018, 11:37
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="results-table__criticality results-table__criticality-bad">
+                                    Опасный
+                                </div>
+                            </td>
+                            <td>
+                                Потеря связи
+                            </td>
+                            <td>
+                                Климов К.И.
+                            </td>
+                            <td>
+                                Здание 1
+                            </td>
+                            <td>
+                                Смена 1, обход 5
+                            </td>
+                            <td class="results-table__date">
+                                18.08.2018, 10:51
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="results-table__criticality results-table__criticality-medium">
+                                    Потенциально опасный
+                                </div>
+                            </td>
+                            <td>
+                                Потеря связи
+                            </td>
+                            <td>
+                                Константинов В.Ю.
+                            </td>
+                            <td>
+                                Здание 1
+                            </td>
+                            <td>
+                                Смена 1, обход 5
+                            </td>
+                            <td class="results-table__date">
+                                20.08.2018, 12:25
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </main>
         </div>
         <nav class="nav-bar">

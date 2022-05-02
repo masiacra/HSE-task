@@ -5,6 +5,7 @@ body {
     justify-content: flex-end;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -78,6 +79,7 @@ body {
     background: #FFFFFF;
     border: 1px solid #000000;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .header__interval {
@@ -123,6 +125,7 @@ body {
     position: absolute;
     top: 25%;
     right: 22px;
+    cursor: pointer;
 }
 
 /* styles for graphics */
@@ -210,6 +213,8 @@ body {
     font-weight: 400;
     color: #000000;
     opacity: 0.5;
+    border: none;
+    padding-left: 10px;
 }
 
 .search-form__search-button {
@@ -219,4 +224,69 @@ body {
     line-height: 25px;
     color: #FFFFFF;
     padding: 12.5px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for table */
+.results-table__container {
+    margin-left: 30px;
+    margin-right: 40px;
+    padding-top: 40px;
+}
+.results-table {
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.results-table th {
+    text-align: left;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DDDDDD;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.results-table td {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.results-table tr td {
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.results-table__date {
+    color: #096DD9;
+}
+
+.results-table__criticality {
+    padding: 2px 13px 2px 8px;
+}
+
+.results-table__criticality-bad {
+    background: linear-gradient(0deg, rgba(255, 77, 79, 0.2), rgba(255, 77, 79, 0.2)), #FFFFFF;
+    border: 1px solid #FF4D4F;
+    border-radius: 2px;
+    color: #FF4D4F;
+    width: 76px;
+}
+
+.results-table__criticality-medium {
+    background: linear-gradient(0deg, rgba(255, 179, 0, 0.2), rgba(255, 179, 0, 0.2)), #FFFFFF;
+    border: 1px solid #FFB300;
+    border-radius: 2px;
+    color: #FFB300;
+    width: 110px;
+}
+
+.results-table__criticality-non-critical {
+    background: linear-gradient(0deg, rgba(115, 209, 61, 0.2), rgba(115, 209, 61, 0.2)), #FFFFFF;
+    border: 1px solid #5D9D38;
+    border-radius: 2px;
+    width: 105px;
+    color: #5D9D38;
 }
