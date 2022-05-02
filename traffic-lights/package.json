@@ -1,0 +1,17 @@
+{
+  "name": "traffic-lights",
+  "version": "1.0.0",
+  "description": "simple web imitation of traffic lights",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "traffic",
+    "lights",
+    "vanilla",
+    "javascript"
+  ],
+  "author": "Igor Savelev",
+  "license": "ISC"
+}
