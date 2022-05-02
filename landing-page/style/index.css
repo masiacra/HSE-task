@@ -125,3 +125,66 @@ body {
     right: 22px;
 }
 
+/* styles for graphics */
+.graphs {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.graphs__typography {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.graphs__card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 3px 8px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.graphs__objects-wrapper {
+    max-width: 440px;
+}
+
+
+.graphs__objects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.graphs__objects div {
+    background-color: rgba(255, 77, 79, 0.2);
+    padding: 5px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.graphs__axis {
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+.graphs__points {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.graphs__rectangle-good {
+    fill: #5D9D38;
+}
+
+.graphs__rectangle-normal {
+    fill: #FFB300;
+}
+
+.graphs__rectangle-bad {
+    fill: #FF4D4F;
+}

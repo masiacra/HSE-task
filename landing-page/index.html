@@ -35,31 +35,117 @@
                 </div>
             </header>
             <main>
-                <div>
-                    Сотрудников на смене
-                </div>
-                <div>
-                    Инциденты
-                </div>
-                <div>
-                    Объекты с низкой частотой обхода
-                    <div>
-                        Градирня 5
+                <div class="graphs">
+                    <div class="graphs__card">
+                        <h4 class="graphs__typography">
+                            Сотрудников на смене
+                        </h4>
+                        <svg height="92" width="240" xmlns="http://www.w3.org/2000/svg">
+                            <!-- should use javascript to calculate all params in real case -->
+                            <rect width="13" height="50" x="8" y="42" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="40" x="23" y="52" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="40" x="38" y="52" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="70" x="53" y="22" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="44" x="68" y="48" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="56" x="83" y="36" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="50" x="98" y="42" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="40" x="113" y="52" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="56" x="128" y="36" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="70" x="143" y="22" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="50" x="158" y="42" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="56" x="173" y="36" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="50" x="188" y="42" class="graphs__rectangle-good">
+                            </rect>
+                            <rect width="13" height="40" x="203" y="52" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="50" x="218" y="42" class="graphs__rectangle-good">
+                            </rect>
+                            <line x1="0" y1="92" x2="240" y2="92" class="graphs__axis"></line>
+                            <line x1="0" y1="56" x2="240" y2="56" class="graphs__axis"></line>
+                            <text x="0" y="88" class="graphs__points">
+                                0
+                            </text>
+                            <text x="0" y="52" class="graphs__points">
+                                3
+                            </text>
+                        </svg>
                     </div>
-                    <div>
-                        Насос 1
-                    </div>
-                    <div>
-                        Градирня 1
-                    </div>
-                    <div>
-                        Градирня 10
-                    </div>
-                    <div>
-                        Насос 3
-                    </div>
-                </div>
+                    <div class="graphs__card">
+                        <h4 class="graphs__typography">
+                            Инциденты
+                        </h4>
+                        <svg height="92" width="240" xmlns="http://www.w3.org/2000/svg">
+                            <!-- should use javascript to calculate all params in real case -->
+                            <rect width="13" height="40" x="8" y="52" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="40" x="23" y="52" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="40" x="38" y="52" class="graphs__rectangle-bad">
+                            </rect>
+                            <rect width="13" height="44" x="68" y="48" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="70" x="83" y="22" class="graphs__rectangle-normal">
+                            </rect>
 
+                            <rect width="13" height="40" x="113" y="52" class="graphs__rectangle-bad">
+                            </rect>
+                            <rect width="13" height="56" x="128" y="36" class="graphs__rectangle-normal">
+                            </rect>
+
+                            <rect width="13" height="50" x="158" y="42" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="56" x="173" y="36" class="graphs__rectangle-normal">
+                            </rect>
+                            <rect width="13" height="50" x="188" y="42" class="graphs__rectangle-normal">
+                            </rect>
+
+                            <rect width="13" height="50" x="218" y="42" class="graphs__rectangle-normal">
+                            </rect>
+                            <line x1="0" y1="92" x2="240" y2="92" class="graphs__axis"></line>
+                            <line x1="0" y1="56" x2="240" y2="56" class="graphs__axis"></line>
+                            <text x="0" y="88" class="graphs__points">
+                                0
+                            </text>
+                            <text x="0" y="52" class="graphs__points">
+                                1
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="graphs__card graphs__objects-wrapper">
+                        <h4 class="graphs__typography">
+                            Объекты с низкой частотой обхода
+                        </h4>
+                        <div class="graphs__objects">
+                            <div>
+                                Градирня 5
+                            </div>
+                            <div>
+                                Насос 1
+                            </div>
+                            <div>
+                                Градирня 1
+                            </div>
+                            <div>
+                                Градирня 10
+                            </div>
+                            <div>
+                                Насос 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <form>
                     <input type="text" placeholder="Введите имя сотрудника или название объекта">
                     <button type="submit">
