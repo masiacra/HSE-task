@@ -59,6 +59,10 @@ body {
     border-right: 4px solid rgba(255, 255, 255, 0.4);
 }
 
+.nav-bar__active a {
+    opacity: 1;
+}
+
 /* styles for header */
 .header {
     background: #FFFFFF;
@@ -289,4 +293,8 @@ body {
     border-radius: 2px;
     width: 105px;
     color: #5D9D38;
+}
+
+.results-table__arrow {
+    cursor: pointer;
 }
