@@ -5,7 +5,55 @@
         <meta name="description" content="Traffic lights web application">
         <meta name="keywords" content="traffic lights">
         <title>Traffic lights app</title>
+        <style>
+            .traffic-lights {
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.5);
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .lantern {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            form {
+                display: flex;
+            }
+
+        </style>
     </head>
     <body>
+        <form>
+            By default we pass 1 second timing
+            <div>
+                <button name="start" type="button">
+                    start
+                </button>
+                <button name="stop" type="button">
+                    stop
+                </button>
+            </div>
+            <label>
+                Enter the waiting time (in seconds) for the color change for the first lantern
+                <input type="number" placeholder="1 second, for example" name="firstLantern">
+            </label>
+            <label>
+                Enter the waiting time (in seconds) for the color change for the second lantern
+                <input type="number" placeholder="2 seconds" name="secondLantern">
+            </label>
+            <label>
+                Enter the waiting time (in seconds) for the color change for the third lantern
+                <input type="number" placeholder="3 seconds" name="thirdLantern">
+            </label>
+        </form>
+        <div class="traffic-lights">
+        </div>
     </body>
 </html>
