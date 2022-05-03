@@ -15,7 +15,6 @@ export class TrafficLights implements ITrafficLights {
   private lanterns: ILantern[];
   private timer: ITimer;
   private incrementer: IncrementValue = IncrementValue.Increment;
-  private isOn: boolean = false;
 
   constructor(element: HTMLElement, colors: LanternConfiguration[]) {
     this.element = element;
@@ -64,7 +63,10 @@ export class TrafficLights implements ITrafficLights {
 
   stop(): void {
     this.timer.pause();
-    this.isOn = false;
+  }
+
+  resume(): void {
+    this.timer.resume();
   }
 
   start(currentColor?: string, remaining?: number): void {
@@ -77,7 +79,6 @@ export class TrafficLights implements ITrafficLights {
     const currentLantern = this.lanterns[this.currentLanternIndex];
     currentLantern.turnOnOff();
     this.timer.start(remaining || currentLantern.timing, this.changeColor);
-    this.isOn = true;
   }
 
   handleMouseEnter(): void {
@@ -89,10 +90,6 @@ export class TrafficLights implements ITrafficLights {
   }
 
   getLastParams(): LastParams | undefined {
-    if (!this.isOn) {
-      return;
-    }
-
     const currentLantern = this.lanterns[this.currentLanternIndex];
 
     if (currentLantern) {

@@ -17,5 +17,6 @@ export interface LastParams {
 export interface ITrafficLights {
   start(currentColor: string, remaining: number): void;
   stop(): void;
+  resume(): void;
   getLastParams(): LastParams | undefined;
 }

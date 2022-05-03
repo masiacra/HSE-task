@@ -38,6 +38,10 @@ export class Application {
   }
 
   private start(currentColor?: string, remaining = 0): void {
+    if (this.trafficLights) {
+      this.trafficLights.resume();
+      return;
+    }
     const firstInput = this.form.firstLantern;
     const secondInput = this.form.secondLantern;
     const thirdInput = this.form.thirdLantern;
